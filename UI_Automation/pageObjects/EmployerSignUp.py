@@ -14,6 +14,8 @@ class EmployerSignUp:
 
     sign_up_btn = (By.XPATH, '//*[@id="employerForm"]/div[4]/button')
 
+    login_url = (By.XPATH, '//*[@id="employerForm"]/div[4]/div/a')
+
     def __init__(self, driver):
         self.driver = driver
 
@@ -34,3 +36,7 @@ class EmployerSignUp:
 
     def get_signup_button(self):
         return self.driver.find_element(*EmployerSignUp.sign_up_btn)
+
+    def get_login_url(self):
+        return self.driver.find_element(*EmployerSignUp.login_url)
+
