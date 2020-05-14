@@ -49,7 +49,7 @@ class TestEmployerHome(BaseClass):
         job_profile.get_job_title_field().send_keys("JAVA DEVELOPER")
         job_profile.get_client_name_field().send_keys("Automation CLIENTS")
         job_profile.get_min_exp_down().click()
-        ActionChains(self.driver).move_to_element(job_profile.get_min_exp_field()).click().perform()
+
         enter_skills = job_profile.get_skills_field()
         enter_skills.send_keys('Java')
         enter_skills.send_keys(Keys.ENTER)
