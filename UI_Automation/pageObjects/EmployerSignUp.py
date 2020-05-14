@@ -16,6 +16,11 @@ class EmployerSignUp:
 
     login_url = (By.XPATH, '//*[@id="employerForm"]/div[4]/div/a')
 
+    success_modal = (By.CLASS_NAME, 'sweet-alert')
+
+    success_ok = (By.CLASS_NAME, 'signUp_confirmButtonStyle__3VakH')
+
+
     def __init__(self, driver):
         self.driver = driver
 
@@ -39,4 +44,11 @@ class EmployerSignUp:
 
     def get_login_url(self):
         return self.driver.find_element(*EmployerSignUp.login_url)
+
+    def get_success_modal(self):
+        return self.driver.find_element(*EmployerSignUp.success_modal)
+
+    def get_success_confirm(self):
+        return self.driver.find_element(*EmployerSignUp.success_ok)
+
 
