@@ -91,7 +91,7 @@ class TestFmHomePage(BaseClass):
         sign_in.get_password_field().send_keys(password)
         sign_in.get_login_button().click()
         WebDriverWait(self.driver, 10).until(
-            EC.presence_of_element_located((By.LINK_TEXT, 'New Interview'))
+            EC.presence_of_element_located((By.XPATH, "//button[contains(text(),'Setup Your Account')]"))
         )
 
 
