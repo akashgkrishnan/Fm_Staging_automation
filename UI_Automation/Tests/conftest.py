@@ -16,6 +16,7 @@ def setup(request):
 
     driver.get('http://a2staging.innovationm.com/')
     driver.maximize_window()
+    driver.implicitly_wait(10)
     request.cls.driver = driver
     yield
     driver.close()

@@ -7,7 +7,9 @@ class FmContactPage:
     email = (By.XPATH, '//input[@name = "mail"]')
     phone = (By.XPATH, '//input[@name = "phone"]')
     company = (By.XPATH, '//input[@name = "company"]')
-    submit_btn = (By.XPATH, "button[contains(text(), 'Submit')]")
+    query = (By.XPATH, '//textarea[@name="details"]')
+    submit_btn = (By.XPATH, "//button[@class='btn-secondary']")
+    success = (By.XPATH, "//h1[contains(text(),'Thank You!')]")
 
     def __init__(self, driver):
         self.driver = driver
@@ -24,5 +26,11 @@ class FmContactPage:
     def get_company_field(self):
         return self.driver.find_element(*FmContactPage.company)
 
+    def get_query_field(self):
+        return self.driver.find_element(*FmContactPage.query)
+
     def get_submit_btn(self):
         return self.driver.find_element(*FmContactPage.submit_btn)
+
+    def get_success_text(self):
+        return self.driver.find_element(*FmContactPage.success)

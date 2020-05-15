@@ -7,7 +7,7 @@ class FmHomePage:
     employer_sign_up = (By.XPATH, "//a[contains(text(),'Employer Sign Up')]")
     employer_sign_in = (By.XPATH, "//a[contains(text(),'Employer Log In')]")
     pricing = (By.XPATH, "//a[contains(text(), 'Pricing')x`]")
-    contact = (By.XPATH, "a[contains(text(), 'Contact Us')]")
+    contact = (By.XPATH, "//a[contains(text(),'Contact Us')]")
 
 
     def __init__(self, driver):
