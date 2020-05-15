@@ -23,6 +23,13 @@ class TestFmHomePage(BaseClass):
         employer_intro.get_submit_demo().click()
         sleep(7)
 
+    def test_contact_page(self):
+        home_page = FmHomePage(self.driver)
+        home_page.get_contact().click()
+        WebDriverWait(self.driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, '//h1[contains(text(),"Hello!")]'))
+        )
+        contact_page = FmContactPage(self.driver)
 
 
 

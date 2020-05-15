@@ -4,19 +4,12 @@ from selenium.webdriver.common.by import By
 class FmEmployerPage:
 
     request_demo = (By.XPATH, '//button[contains(text(), "Request Demo")]')
-
     name = (By.XPATH, '//input[@name="name"]')
-
     email = (By.XPATH, '//input[@name="mail"]')
-
     phone = (By.XPATH, '//input[@name="phone"]')
-
     company = (By.XPATH, '//input[@name="company"]')
-
     company_wesite = (By.XPATH, '//input[@name="website"]')
-
     submit_demo = (By.XPATH, '//button[contains(text(), "Submit")]')
-
     demo_success = (By.XPATH, "//div[@id='contact-form-success']//div[@class='submit_message']")
 
 
