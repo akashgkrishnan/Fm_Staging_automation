@@ -11,7 +11,7 @@ class EmployerJobProfile:
 
     min_exp_down = (By.CLASS_NAME, "css-9ia8u")
 
-    min_exp_field = (By.XPATH, "//div[contains(@class,'css-26l3qy-menu')]")
+    min_exp_field = (By.NAME, "min")
 
 
     max_exp_down = (By.CLASS_NAME, ' css-tlfecz-indicatorContainer')

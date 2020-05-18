@@ -25,7 +25,7 @@ class EmployerCandidate:
         return self.driver.find_element(*EmployerCandidate.candidate_phone)
 
     def get_candidate_mail(self):
-        return self.driver.find_element(*EmployerCandidate.candidate_name)
+        return self.driver.find_element(*EmployerCandidate.candidate_email)
 
     def get_upload_resume(self):
         return self.driver.find_element(*EmployerCandidate.upload_resume)
