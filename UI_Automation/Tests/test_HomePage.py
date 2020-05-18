@@ -26,6 +26,7 @@ class TestFmHomePage(BaseClass):
         sleep(2)
         employer_intro.get_name_field().send_keys('Akash G Krishnan')
         employer_intro.get_email_field().send_keys('akash.k@oneassist.in')
+        employer_intro.get_phone_field().send_keys('8130233807')
         employer_intro.get_company_field().send_keys('KRISHNAN')
         employer_intro.get_company_website_field().send_keys('www.google.co.in')
         employer_intro.get_submit_demo().click()
