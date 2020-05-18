@@ -94,7 +94,7 @@ class TestEmployerHome(BaseClass):
         self.login()
         employer_home = EmployerHome(self.driver)
         employer_home.get_reset_password().click()
-        sleep(3)
+        sleep(7)
         employer_home.get_current_password().send_keys(self.password)
         self.new_password = '123@Testing'
         employer_home.get_new_password().send_keys(self.new_password)
