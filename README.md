@@ -10,9 +10,9 @@ Download and install Python version 3.6 or above
 [Python](https://www.python.org/downloads/)  
 
 
-```mkdir testing```
-'''cd testing ```
-Use Git or checkout with SVN using the web URL.
+```mkdir testing```  
+```cd testing ```  
+Use Git or checkout with SVN using the web URL.  
 ```git clone https://github.com/akashgkrishnan/Fm_Staging_automation.git```
 
 
@@ -20,7 +20,7 @@ Change In to the Directory with requirements.txt
 
 Open CMD/Terminal  
 
-```pip install -r requirements.txt```
+```pip install -r requirements.txt```  
 
 This will install all the required Dependencies
 
