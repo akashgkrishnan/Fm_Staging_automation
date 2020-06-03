@@ -54,21 +54,14 @@ Enter the command
 
 select project as github project
 
-Add choice parameter  
-Under Choice Parameter set the choices as  
-QA1  
-QA2  
+Add Git parameter  for branch and set default to master  
 
-Add Git parameter  for branch  
-
-Add string paramter with name count default = 1
-
-select windows batch command/ shell command and enter the following commands
+select windows batch command/ shell command and enter the following commands  
 
 ```buildoutcfg
 cd API_Automation
 cd Tests
-py.test -v -s --count=%count% --html=$WORKSPACE\API_Automation\reports\report.html --junitxml="result.xml"
+py.test -v -s --html=$WORKSPACE\API_Automation\reports\report.html --junitxml="result.xml"
 ```
 
 Post Build completion  
