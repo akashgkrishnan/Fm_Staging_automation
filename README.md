@@ -8,7 +8,16 @@ Done in Python 3.8
 
 Download and install Python version 3.6 or above  
 [Python](https://www.python.org/downloads/)  
-Change In to the Directory  
+
+
+```mkdir testing```
+'''cd testing ```
+Use Git or checkout with SVN using the web URL.
+```git clone https://github.com/akashgkrishnan/Fm_Staging_automation.git```
+
+
+Change In to the Directory with requirements.txt  
+
 Open CMD/Terminal  
 
 ```pip install -r requirements.txt```
@@ -19,17 +28,10 @@ Change in to the Tests Directory and
 ### Run the command : ###
 ```py.test -v -s```
 
-### For executing the same test multiple times ###
-```py.test --count=num_of_times -v -s```
-
 ### For generating HTML report ###
 ``` py.test -v -s --html=report.html```
 
-### For specifying the Env For testin ###
 
-``` py.test -v -s --ENV_NAME QA1```
-
-(note: need to add info on Multiple ENV)
 
 ## Jenkins Integration 
 
@@ -66,12 +68,8 @@ select windows batch command/ shell command and enter the following commands
 ```buildoutcfg
 cd API_Automation
 cd Tests
-py.test -v -s --count=%count% --html=$WORKSPACE\API_Automation\reports\report.html --ENV_NAME %env% --junitxml="result.xml"
+py.test -v -s --count=%count% --html=$WORKSPACE\API_Automation\reports\report.html --junitxml="result.xml"
 ```
 
-
-
 Post Build completion  
-Open Workspace and move into the reports folder and open report.html
-
-
+Open Workspace and move into the reports folder and open report.html  
